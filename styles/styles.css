@@ -1,7 +1,7 @@
 :root {
   --primario: rgb(225, 97, 77);
   --blanco: #fff;
-  --negro: #000;
+  --negro: #1e1d1d;
   --fuentePrincipal: "Nunito", sans-serif;
 }
 
@@ -60,7 +60,7 @@ h3 {
   border-radius: 35%;
   border-top-left-radius: 0;
   border: none;
-  color: rgb(255, 255, 255);
+  color: var(--blanco);
   font-size: 0.8rem;
   text-transform: uppercase;
   font-weight: 800;
@@ -94,7 +94,7 @@ figure {
   top: 0;
   visibility: hidden;
   text-align: center;
-  color: rgb(255, 255, 255);
+  color: var(--blanco);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -128,5 +128,12 @@ figure:hover > .section-images__text-hover {
 
   .section-title__detail {
     font-size: 3.5rem;
+  }
+
+  .section-images {
+    display: flex;
+    flex-direction: row;
+    padding: 0 4rem 0 4rem;
+    border: 1px solid red;
   }
 }
