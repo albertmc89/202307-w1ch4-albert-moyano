@@ -1,0 +1,21 @@
+:root {
+  --primario: rgb(222, 59, 59);
+  --blanco: #fff;
+  --negro: #000;
+  --fuentePrincipal: "Nunito", sans-serif;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--fuentePrincipal);
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+}
