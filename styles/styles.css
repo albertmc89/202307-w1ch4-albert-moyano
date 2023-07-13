@@ -22,6 +22,11 @@ body {
   min-height: 100vh;
 }
 
+h3 {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}
+
 .section-title__container {
   display: flex;
   flex-direction: column;
