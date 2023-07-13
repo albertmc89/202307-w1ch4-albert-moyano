@@ -70,10 +70,34 @@ body {
   padding: 2rem;
 }
 
-.image {
+.section-images img {
   width: 100%;
   height: 100%;
   border-radius: 8%;
+}
+
+figure {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.section-images__text-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  visibility: hidden;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+figure:hover > .section-images__text-hover {
+  visibility: visible;
+  opacity: 1;
 }
 
 @media (min-width: 768px) and (max-width: 1540px) {
