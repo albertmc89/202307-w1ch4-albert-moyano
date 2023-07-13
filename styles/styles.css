@@ -1,5 +1,5 @@
 :root {
-  --primario: rgb(231, 86, 86);
+  --primario: rgb(225, 97, 77);
   --blanco: #fff;
   --negro: #000;
   --fuentePrincipal: "Nunito", sans-serif;
@@ -37,4 +37,18 @@ body {
 .section-title__detail {
   font-weight: 800;
   font-size: 2.2rem;
+}
+
+.section-title__button {
+  padding: 1.2rem;
+  background-color: var(--primario);
+  margin-top: 1rem;
+  border-radius: 40%;
+  border-top-left-radius: 0;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.05rem;
 }
