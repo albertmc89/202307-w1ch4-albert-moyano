@@ -1,5 +1,5 @@
 :root {
-  --primario: rgb(222, 59, 59);
+  --primario: rgb(231, 86, 86);
   --blanco: #fff;
   --negro: #000;
   --fuentePrincipal: "Nunito", sans-serif;
@@ -18,4 +18,23 @@ html {
 body {
   margin: 0;
   font-size: 1rem;
+}
+
+.section-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.section-title__title {
+  text-transform: uppercase;
+  color: var(--primario);
+  font-size: 1rem;
+}
+
+.section-title__detail {
+  font-weight: 800;
+  font-size: 2.2rem;
 }
