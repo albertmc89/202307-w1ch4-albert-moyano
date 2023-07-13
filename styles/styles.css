@@ -135,4 +135,9 @@ figure:hover > .section-images__text-hover {
     flex-direction: row;
     padding: 0 4rem 0 4rem;
   }
+
+  .section-images > figure {
+    margin: 0;
+    height: 20rem;
+  }
 }
