@@ -1,7 +1,7 @@
 :root {
   --primario: rgb(225, 97, 77);
   --blanco: #fff;
-  --negro: #000;
+  --negro: #1e1d1d;
   --fuentePrincipal: "Nunito", sans-serif;
 }
 
@@ -20,6 +20,11 @@ body {
   font-size: 1rem;
   min-width: 320px;
   min-height: 100vh;
+}
+
+h3 {
+  font-size: 1.6rem;
+  text-transform: capitalize;
 }
 
 .section-title__container {
@@ -55,7 +60,7 @@ body {
   border-radius: 35%;
   border-top-left-radius: 0;
   border: none;
-  color: rgb(255, 255, 255);
+  color: var(--blanco);
   font-size: 0.8rem;
   text-transform: uppercase;
   font-weight: 800;
@@ -70,10 +75,34 @@ body {
   padding: 2rem;
 }
 
-.image {
+.section-images img {
   width: 100%;
   height: 100%;
   border-radius: 8%;
+}
+
+figure {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.section-images__text-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  visibility: hidden;
+  text-align: center;
+  color: var(--blanco);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+figure:hover > .section-images__text-hover {
+  visibility: visible;
+  opacity: 1;
 }
 
 @media (min-width: 768px) and (max-width: 1540px) {
@@ -99,5 +128,12 @@ body {
 
   .section-title__detail {
     font-size: 3.5rem;
+  }
+
+  .section-images {
+    display: flex;
+    flex-direction: row;
+    padding: 0 4rem 0 4rem;
+    border: 1px solid red;
   }
 }
