@@ -60,12 +60,19 @@ h3 {
   border-radius: 2rem;
   width: 7rem;
   border-top-left-radius: 0;
-  border: none;
+  border: 0.1rem solid var(--primario);
   color: var(--blanco);
   font-size: 0.8rem;
   text-transform: uppercase;
   font-weight: 800;
   letter-spacing: 0.05rem;
+  cursor: pointer;
+}
+
+.section-title__button:hover {
+  background-color: var(--blanco);
+  color: var(--primario);
+  border: 0.1rem solid var(--primario);
 }
 
 .section-images {
